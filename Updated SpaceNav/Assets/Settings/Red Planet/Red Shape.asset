@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b20de8ecd0e7e645bf2fd64c839dd26, type: 3}
+  m_Name: Red Shape
+  m_EditorClassIdentifier: 
+  planetRadius: 50
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.07
+        numLayers: 3
+        baseRoughness: 1.24
+        roughness: 1.87
+        persistence: 1.01
+        center: {x: -0.84, y: -0.26, z: 0.4}
+        minValue: 1.29
+      rigidNoiseSettings:
+        strength: 0
+        numLayers: 0
+        baseRoughness: 0
+        roughness: 0
+        persistence: 0
+        center: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultipler: 0
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.29
+        numLayers: 4
+        baseRoughness: 2.79
+        roughness: 2.04
+        persistence: 1.1
+        center: {x: 0, y: 0, z: 0}
+        minValue: 1.04
+      rigidNoiseSettings:
+        strength: 1.08
+        numLayers: 4
+        baseRoughness: 2.32
+        roughness: 0.7
+        persistence: 0.3
+        center: {x: 0, y: 0, z: 0}
+        minValue: 0.47
+        weightMultipler: 0.57
+  - enabled: 1
+    useFirstLayerAsMask: 1
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: 0
+        numLayers: 0
+        baseRoughness: 0
+        roughness: 0
+        persistence: 0
+        center: {x: 0, y: 0, z: 0}
+        minValue: 0
+      rigidNoiseSettings:
+        strength: 0.17
+        numLayers: 5
+        baseRoughness: 3.64
+        roughness: 2.06
+        persistence: 1.08
+        center: {x: 0, y: 0, z: 0}
+        minValue: -0.36
+        weightMultipler: 1.14
