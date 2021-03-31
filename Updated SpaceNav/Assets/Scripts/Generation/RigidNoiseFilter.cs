@@ -4,6 +4,7 @@ using UnityEngine;
 
 // More rich-like terrain by applying some additional math to the original SimpleNoiseFilter.
 // Most of the code is similar to SimpleNoiseFilter.
+// All scripts in this folder were coded with the following tutorial series by Sebastian Lague: https://www.youtube.com/watch?v=QN39W020LqU&list=PLFt_AvWsXl0cONs3T0By4puYy6GM22ko8
 public class RigidNoiseFilter : INoiseFilter
 {
     NoiseSettings.RigidNoiseSettings settings;

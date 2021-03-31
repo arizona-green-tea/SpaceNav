@@ -3,6 +3,8 @@
 [ExecuteInEditMode]
 public class Orbits : MonoBehaviour {
 
+    // NOT MINE
+    // By Sebastian Lague in his Coding Adventure Series: https://www.youtube.com/watch?v=7axImc1sxa0
     public int numSteps = 1000;
     public float timeStep = 0.1f;
     public bool usePhysicsTimeStep;

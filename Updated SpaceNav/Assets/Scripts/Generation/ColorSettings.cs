@@ -4,6 +4,7 @@ using UnityEngine;
 
 // Something happened with this file, not sure why it was acting up earlier.
 // Color settings for the planet.
+// All scripts in this folder were coded with the following tutorial series by Sebastian Lague: https://www.youtube.com/watch?v=QN39W020LqU&list=PLFt_AvWsXl0cONs3T0By4puYy6GM22ko8
 [CreateAssetMenu()]
 public class ColorSettings : ScriptableObject
 {

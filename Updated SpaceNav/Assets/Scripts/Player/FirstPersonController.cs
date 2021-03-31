@@ -83,7 +83,6 @@ public class FirstPersonController : MonoBehaviour
             jumping = true;
             audioSource.PlayOneShot(jump, 0.3f);
         }
-
         // Check if the player is on the ground before jumping.
         /*
         grounded = false;
@@ -102,10 +101,11 @@ public class FirstPersonController : MonoBehaviour
     // If the player is not moving during a jump and the audio player is not playing any sound, play the landing clip.
     private void OnCollisionEnter(Collision other) 
     {
-        if(targetMoveAmount.magnitude == 0f && !audioSource.isPlaying)
+        if(!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(land);
         }
+        jumping = false;
     }
 
     // For each frame a collision occurs.

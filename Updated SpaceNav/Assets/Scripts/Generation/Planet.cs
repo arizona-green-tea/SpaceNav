@@ -5,6 +5,7 @@ using UnityEngine;
 /* Class responsible for creating six terrain faces and determining which direction they are attributed to.
  * 3/6/21
  */
+ // All scripts in this folder were coded with the following tutorial series by Sebastian Lague: https://www.youtube.com/watch?v=QN39W020LqU&list=PLFt_AvWsXl0cONs3T0By4puYy6GM22ko8
 public class Planet : MonoBehaviour
 {
     // Limit the range of the resolution (256 since 256^2 is the maximum amount of vertices a mesh can have).

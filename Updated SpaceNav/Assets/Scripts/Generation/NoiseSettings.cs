@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Class for keeping track of all noise settings.
+// All scripts in this folder were coded with the following tutorial series by Sebastian Lague: https://www.youtube.com/watch?v=QN39W020LqU&list=PLFt_AvWsXl0cONs3T0By4puYy6GM22ko8
 [System.Serializable]
 public class NoiseSettings
 {

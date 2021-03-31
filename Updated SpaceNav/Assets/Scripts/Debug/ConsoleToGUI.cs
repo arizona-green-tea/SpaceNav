@@ -2,6 +2,8 @@
      
      namespace DebugStuff
      {
+         // NOT MINE
+         // From https://answers.unity.com/questions/125049/is-there-any-way-to-view-the-console-in-a-build.html by bboysil
          public class ConsoleToGUI : MonoBehaviour
          {
      //#if !UNITY_EDITOR
