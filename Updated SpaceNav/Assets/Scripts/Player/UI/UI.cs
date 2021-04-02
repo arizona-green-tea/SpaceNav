@@ -19,7 +19,6 @@ public class UI : MonoBehaviour
     public TextMeshProUGUI ascendingDisplay;
     public GameObject playerUI;
     private FirstPersonController player;
-
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Confined;

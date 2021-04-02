@@ -41,9 +41,8 @@ public class FirstPersonController : MonoBehaviour
     public AudioClip land;
     // Animation Stuff.
     private Animator anim;
-    private KeyCode switchCam = KeyCode.F3;
-
     // Camera Stuff.
+    private KeyCode switchCam = KeyCode.F3;
     public Camera firstPerson;
     public Camera thirdPerson;
     private bool isFirstPerson;
@@ -76,6 +75,7 @@ public class FirstPersonController : MonoBehaviour
         targetMoveAmount = moveDir * walkSpeed;
         moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
         changeCamera();
+        //print(anim.GetInteger("AnimationPar"));
         // Jump Controller, jump is space is pressed.
         if (Input.GetButtonDown("Jump") && grounded == true)
         {
@@ -105,7 +105,6 @@ public class FirstPersonController : MonoBehaviour
         {
             audioSource.PlayOneShot(land);
         }
-        jumping = false;
     }
 
     // For each frame a collision occurs.
@@ -132,6 +131,12 @@ public class FirstPersonController : MonoBehaviour
     private void OnCollisionExit(Collision other) 
     {
         grounded = false;
+        /*
+        if(jumping)
+        {
+            anim.SetInteger ("AnimationPar", 2);
+        }
+        */
     }
 
     // Move the player's rigidbody using the calculated movement.

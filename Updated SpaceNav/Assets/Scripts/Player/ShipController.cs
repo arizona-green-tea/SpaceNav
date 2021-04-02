@@ -19,7 +19,7 @@ public class ShipController : MonoBehaviour
     public float rotSmoothSpeed = 10f;
 
     // Ship's own camera
-    public Transform shipCamera;
+    private Transform shipCamera;
 
     // Layer Mask for checking if the ship is grounded.
     public LayerMask groundedMask;
@@ -66,6 +66,13 @@ public class ShipController : MonoBehaviour
     public AudioClip impact;
     public AudioClip door;
     public AudioClip whirSound;
+
+    // Camera Stuff.
+    private KeyCode switchCam = KeyCode.F3;
+    public Camera firstPerson;
+    public Camera thirdPerson;
+    private bool isFirstPerson;
+
     private void Awake()
     {
         // Initialize attributes of the ship's rigidbody: Disable gravity and default physics, set interpolation, center of mass, and continuous collision detection.
@@ -81,6 +88,9 @@ public class ShipController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSource.Play();
         audioSource.loop = true;
+        isFirstPerson = false;
+        thirdPerson.gameObject.SetActive(true);
+        firstPerson.gameObject.SetActive(false);
     }
     private void Start()
     {
@@ -109,6 +119,7 @@ public class ShipController : MonoBehaviour
                 EnterShip();
             }
         }
+        changeCamera();
     }
 
     private void FixedUpdate() 
@@ -282,6 +293,25 @@ public class ShipController : MonoBehaviour
             grounded = true;
         }
 
+    }
+
+        private void changeCamera()
+    {
+        // Change to third person.
+        if(isFirstPerson && Input.GetKeyDown(switchCam))
+        {
+            isFirstPerson = false;
+            shipCamera = thirdPerson.transform;
+            firstPerson.gameObject.SetActive(false);
+            thirdPerson.gameObject.SetActive(true);
+        }
+        else if(!isFirstPerson && Input.GetKeyDown(switchCam)) // Change to first person.
+        {
+            isFirstPerson = true;
+            shipCamera = firstPerson.transform;
+            firstPerson.gameObject.SetActive(true);
+            thirdPerson.gameObject.SetActive(false);
+        }
     }
 
 }
