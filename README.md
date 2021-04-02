@@ -11,6 +11,12 @@ Flying near an Earth-like planetary system.
 ![alt text](https://github.com/BallsAngus/SpaceNav/blob/main/Updated%20SpaceNav/Assets/Previews/Preview%203.PNG)
 Exploring a frigid rocky giant on foot.
 
+![Alt Text](https://github.com/BallsAngus/SpaceNav/blob/main/Updated%20SpaceNav/Assets/Previews/Preview%204.gif)
+
+Spaceship movement.
+
+
+
 ### **Sources**:
 - [Download Link (Version 0.5)](https://drive.google.com/file/d/159_Mc_uHX6oNgIWwskiVEQP48nk7Ffoo/view?usp=sharing)
 - [Google Slides Presentation](https://docs.google.com/presentation/d/1gcIoUj-POMtOo0RVEYQnTKvAZM1zzhNyvxyBKstwqTk/edit?usp=sharing)
