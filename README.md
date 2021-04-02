@@ -12,7 +12,7 @@ Flying near an Earth-like planetary system.
 Exploring a frigid rocky giant on foot.
 
 ### **Sources**:
-- [Download Link](https://drive.google.com/file/d/159_Mc_uHX6oNgIWwskiVEQP48nk7Ffoo/view?usp=sharing)
+- [Download Link (Version 0.5)](https://drive.google.com/file/d/159_Mc_uHX6oNgIWwskiVEQP48nk7Ffoo/view?usp=sharing)
 - [Google Slides Presentation](https://docs.google.com/presentation/d/1gcIoUj-POMtOo0RVEYQnTKvAZM1zzhNyvxyBKstwqTk/edit?usp=sharing)
 - [Research Materials](https://drive.google.com/drive/folders/1XxjSy5FCdEXDD1TT48p0g2zqWZ6-W6DY?usp=sharing)
 - [Research Documentation](https://docs.google.com/document/d/1hY_nc26UUX8pENGcubhC1lDAA8yuMdiTDtmgAYG92Qw/edit?usp=sharing)
