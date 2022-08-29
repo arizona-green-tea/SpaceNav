@@ -1,5 +1,5 @@
 # SpaceNav
-A procedurally generated, open-world space simulator. Created by BallsAngus.
+A procedurally generated, open-world space simulator.
 
 ### **Preview Images**:
 ![alt text](https://github.com/BallsAngus/SpaceNav/blob/main/Updated%20SpaceNav/Assets/Previews/Preview%201.PNG)
